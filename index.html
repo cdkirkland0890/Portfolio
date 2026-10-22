@@ -1,0 +1,456 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f2eb">
+
+    <meta name="description"
+          content="Bespoke web design and development for ambitious businesses. Discover our portfolio and start your next project.">
+
+    <title>Corey Kirkland Studio | Luxury Web Design</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="JS/index.js" defer></script>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <header class="site-header">
+        <nav class="nav container" aria-label="Main navigation">
+            <a class="brand" href="#home" aria-label="Your Name Studio home">
+                <span class="brand-mark">C.K.</span>
+                <span class="brand-name">COREY KIRKLAND <small>CREATIVE STUDIO</small></span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Open menu" aria-expanded="false"
+                    aria-controls="nav-links">
+                <span></span><span></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#work">Selected Work</a>
+                <a href="#services">Services</a>
+                <a href="#about">Studio</a>
+                <a class="nav-contact" href="#contact">Start a Project ↗</a>
+
+                <button id="theme-toggle" class="theme-toggle"
+                        type="button" aria-label="Switch to dark mode"
+                        title="Switch theme">
+                    <span id="theme-icon" aria-hidden="true">☾</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero container" id="home">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> INDEPENDENT DIGITAL STUDIO</p>
+
+                <h1>Digital experiences,<br>
+                    <em>beautifully</em> considered.</h1>
+
+                <p class="hero-description">
+                    Thoughtful web design and purposeful development
+                    for brands ready to make a lasting impression.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#work" class="button button-dark">
+                        Explore selected work <span>↗</span>
+                    </a>
+                    <a href="#contact" class="text-link">
+                        Let's discuss your project
+                    </a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="gold-line"></span>
+                    DESIGN WITH INTENTION. BUILT TO PERFORM.
+                </div>
+            </div>
+
+            <div class="hero-art">
+                <img
+                    src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1200&q=85"
+                    alt="Elegant, thoughtfully designed contemporary interior"
+                    fetchpriority="high">
+
+                <div class="hero-art-label">
+                    <span>01 / OUR APPROACH</span>
+                    <span>Less, but better.</span>
+                </div>
+
+                <div class="hero-stamp" aria-hidden="true">
+                    <span>DESIGN</span>
+                    <span class="stamp-star">✳</span>
+                    <span>DETAIL</span>
+                </div>
+            </div>
+
+            <a href="#work" class="hero-scroll">
+                <span>SCROLL TO DISCOVER</span>
+                <span class="scroll-track"></span>
+            </a>
+        </section>
+
+        <!-- INTRODUCTION -->
+        <section class="intro-section">
+            <div class="container intro-grid">
+                <p class="eyebrow">THE STUDIO PHILOSOPHY</p>
+                <p class="intro-statement">
+                    Your website is more than a digital storefront.
+                    It is <em>your first impression,</em> your reputation,
+                    and an opportunity to turn attention into action.
+                </p>
+            </div>
+        </section>
+
+        <!-- PORTFOLIO -->
+        <section class="section container" id="work">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">A FEW SELECTED PROJECTS</p>
+                    <h2>Work that speaks <em>for itself.</em></h2>
+                </div>
+                <p class="heading-description">
+                    Distinctive digital experiences, shaped around
+                    each business and the people it serves.
+                </p>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Replace the example images and links with your own projects. -->
+
+                <article class="project project-large">
+                    <a class="project-image jordan-brand-preview" href="Jordan&amp;Jordan/index.html"
+                       aria-label="View the Jordan and Jordan property services website">
+                        <span class="jordan-brand-mark" aria-hidden="true">JJ</span>
+                        <span class="jordan-brand-copy">
+                            <span class="jordan-brand-title">Jordan and Jordan</span>
+                            <span class="jordan-brand-services">SERVICES</span>
+                            <span class="jordan-brand-tag">PROFESSIONAL PROPERTY SERVICES</span>
+                        </span>
+                        <span class="image-action" aria-hidden="true">↗</span>
+                    </a>
+                    <div class="project-details">
+                        <div>
+                            <p class="project-type">01 — HOME & PROPERTY</p>
+                            <h3>Jordan & Jordan</h3>
+                            <p>Property services · Business website</p>
+                        </div>
+                        <span class="project-year">WEB DESIGN</span>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <a class="project-image wyze-brand-preview" href="../WyzeGyze/index.html"
+                       aria-label="View the Wyze Guyz Tattoo Parlor website">
+                        <img
+                            src="../WyzeGyze/assets/logo2.jpg"
+                            alt="Wyze Guyz Tattoo Parlor logo"
+                            loading="lazy">
+                        <span class="wyze-brand-copy">
+                            <span class="wyze-brand-title">WYZE GUYZ</span>
+                            <span class="wyze-brand-tag">TATTOO PARLOR</span>
+                        </span>
+                        <span class="image-action" aria-hidden="true">↗</span>
+                    </a>
+                    <div class="project-details">
+                        <div>
+                            <p class="project-type">02 — CREATIVE INDUSTRY</p>
+                            <h3>Wyze Guyz Tattoo</h3>
+                            <p>Tattoo studio · Brand experience</p>
+                        </div>
+                        <span class="project-year">WEB DESIGN</span>
+                    </div>
+                </article>
+
+                <article class="project project-small">
+                    <a class="project-image" href="../Amberleigh%27s%20page/index.html"
+                       aria-label="View Amberleigh's book and lifestyle website">
+                        <img
+                            src="../Amberleigh%27s%20page/images/Library2.jpg"
+                            alt="Library display from A Million Books"
+                            loading="lazy">
+                        <span class="image-action" aria-hidden="true">↗</span>
+                    </a>
+                    <div class="project-details">
+                        <div>
+                            <p class="project-type">03 — EDITORIAL & CULTURE</p>
+                            <h3>A Million Books</h3>
+                            <p>Book reviews · Editorial website</p>
+                        </div>
+                        <span class="project-year">WEB DESIGN</span>
+                    </div>
+                </article>
+
+                <article class="project project-small">
+                    <a class="project-image" href="Fitness/index.html"
+                       aria-label="View the Into the Breach fitness website">
+                        <img
+                            src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&amp;fit=crop&amp;w=900&amp;q=85"
+                            alt="Athlete training with weights in a gym"
+                            loading="lazy">
+                        <span class="image-action" aria-hidden="true">↗</span>
+                    </a>
+                    <div class="project-details">
+                        <div>
+                            <p class="project-type">04 — FITNESS & COACHING</p>
+                            <h3>Into the Breach</h3>
+                            <p>Personal training · Fitness website</p>
+                        </div>
+                        <span class="project-year">WEB DESIGN</span>
+                    </div>
+                </article>
+
+                <article class="project">
+                    <a class="project-image" href="Barbershop/index.html"
+                       aria-label="View the Barbershop website">
+                        <img
+                            src="Barbershop/Assets/Images/hero.jpg"
+                            alt="Barbershop hero image"
+                            loading="lazy">
+                        <span class="image-action" aria-hidden="true">↗</span>
+                    </a>
+                    <div class="project-details">
+                        <div>
+                            <p class="project-type">05 — HOSPITALITY</p>
+                            <h3>The Art of Self-Care</h3>
+                            <p>Hospitality concept · Digital experience</p>
+                        </div>
+                        <span class="project-year">CONCEPT</span>
+                    </div>
+                </article>
+            </div>
+
+            <p class="portfolio-note">No sites are active at this time. They are for portfolio purposes only.</p>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">HOW WE CAN WORK TOGETHER</p>
+                        <h2>Considered design.<br><em>Meaningful results.</em></h2>
+                    </div>
+                    <p class="heading-description">
+                        Every project starts with understanding your goals
+                        and ends with a digital experience built around them.
+                    </p>
+                </div>
+
+                <div class="services-list">
+                    <article class="service-row">
+                        <span class="service-number">01</span>
+                        <div>
+                            <h3>Website Design</h3>
+                            <p>Distinctive layouts, visual direction, typography, and brand presentation.</p>
+                        </div>
+                        <span class="service-arrow">↗</span>
+                    </article>
+
+                    <article class="service-row">
+                        <span class="service-number">02</span>
+                        <div>
+                            <h3>Website Development</h3>
+                            <p>Clean HTML, CSS, and JavaScript with responsive, accessible experiences.</p>
+                        </div>
+                        <span class="service-arrow">↗</span>
+                    </article>
+
+                    <article class="service-row">
+                        <span class="service-number">03</span>
+                        <div>
+                            <h3>Business Websites</h3>
+                            <p>Clear services, compelling calls to action, and a path for customers to connect.</p>
+                        </div>
+                        <span class="service-arrow">↗</span>
+                    </article>
+
+                    <article class="service-row">
+                        <span class="service-number">04</span>
+                        <div>
+                            <h3>Website Refresh</h3>
+                            <p>Give an existing website a more refined look, better structure, and improved usability.</p>
+                        </div>
+                        <span class="service-arrow">↗</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section class="section container about-section" id="about">
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=85"
+                    alt="Minimal creative workspace with natural light"
+                    loading="lazy">
+                <div class="image-caption">A THOUGHTFUL APPROACH TO DIGITAL.</div>
+            </div>
+
+            <div class="about-copy">
+                <p class="eyebrow">A PERSONAL APPROACH</p>
+                <h2>Small studio mindset.<br><em>Big picture thinking.</em></h2>
+
+                <p>
+                    I work with businesses that care about how they show up
+                    online. My approach combines thoughtful design,
+                    practical development, and a clear understanding
+                    of what your website needs to accomplish.
+                </p>
+
+                <p>
+                    No unnecessary complexity. No one-size-fits-all
+                    templates. Just purposeful work designed around
+                    your business and your customers.
+                </p>
+
+                <a class="button button-outline" href="#contact">
+                    Tell me about your project ↗
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-grid">
+                <div class="contact-copy">
+                    <p class="eyebrow">THE NEXT CHAPTER STARTS HERE</p>
+                    <h2>Have a vision?<br><em>Let's give it a home.</em></h2>
+
+                    <p>
+                        Tell me a little about your business, your goals,
+                        and what you would like your website to achieve.
+                        I'll be in touch to discuss the next steps.
+                    </p>
+
+                    <div class="contact-detail">
+                        <span class="detail-label">DIRECT EMAIL</span>
+                        <a href="mailto:your.email@example.com">
+                            futurebusinessemail@email.com ↗
+                        </a>
+                    </div>
+                </div>
+
+                <form id="contact-form"
+                      class="contact-form"
+                      action="https://formspree.io/f/YOUR_FORM_ID"
+                      method="POST">
+
+                    <div class="form-heading">
+                        <h3>Start a conversation</h3>
+                        <p>Tell me about the project you're imagining.</p>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-field">
+                            <label for="name">Your name *</label>
+                            <input type="text" id="name" name="name"
+                                   placeholder="Jane Smith"
+                                   autocomplete="name" required
+                                   minlength="2" maxlength="100">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="email">Email address *</label>
+                            <input type="email" id="email" name="email"
+                                   placeholder="jane@company.com"
+                                   autocomplete="email" required
+                                   maxlength="254">
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="business">Business or brand</label>
+                        <input type="text" id="business" name="business"
+                               placeholder="Your company name"
+                               autocomplete="organization" maxlength="150">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="service">What do you need? *</label>
+                        <select id="service" name="service" required>
+                            <option value="" disabled selected>Select a service</option>
+                            <option>New business website</option>
+                            <option>Website redesign</option>
+                            <option>Portfolio website</option>
+                            <option>Landing page</option>
+                            <option>Other / not sure yet</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="budget">Estimated budget</label>
+                        <select id="budget" name="budget">
+                            <option value="" selected>Prefer to discuss</option>
+                            <option>Under $1,000</option>
+                            <option>$1,000–$2,500</option>
+                            <option>$2,500–$5,000</option>
+                            <option>$5,000+</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="message">Tell me about your project *</label>
+                        <textarea id="message" name="message"
+                                  rows="4" minlength="10" maxlength="5000"
+                                  placeholder="What are you looking to create?"
+                                  required></textarea>
+                    </div>
+
+                    <input type="hidden" name="_subject"
+                           value="New portfolio project inquiry">
+
+                    <!-- Basic spam trap -->
+                    <div class="honeypot" aria-hidden="true">
+                        <label for="website">Leave this field empty</label>
+                        <input type="text" id="website" name="_gotcha"
+                               tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <button type="submit" class="button button-dark submit-button">
+                        <span id="submit-text">Send project inquiry ↗</span>
+                    </button>
+
+                    <p class="form-status" id="form-status"
+                       role="status" aria-live="polite"></p>
+
+                    <p class="form-privacy">
+                        Your information will be used to respond to your inquiry.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-top">
+            <a class="brand" href="#home">
+                <span class="brand-mark">C.K.</span>
+                <span class="brand-name">COREY KIRKLAND <small>CREATIVE STUDIO</small></span>
+            </a>
+
+            <a href="#home" class="back-top">BACK TO TOP ↑</a>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© <span id="current-year"></span> Corey Kirkland Studio. All rights reserved.</p>
+            <p>Independent by design. Intentional by nature.</p>
+        </div>
+    </footer>
+</body>
+</html>

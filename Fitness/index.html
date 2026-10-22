@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal training, strength coaching, fat loss, and customized fitness programs.">
+  <title>INTO THE BREACH | Personal Training</title>
+  <link rel="stylesheet" href="/Fitness/CSS/styles.css">
+  <script src="/Fitness/JS/index.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="brand">
+      <a href="#home" class="logo">Into the Breach<span>.</span></a>
+      <a href="#home" class="tagline">Face your fight. Forge your body<span>.</span></a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Open navigation" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#programs">Programs</a>
+      <a href="#results">Results</a>
+      <a href="#contact" class="nav-cta">Start Training</a>
+    </nav>
+
+    <button class="theme-toggle" id="themeToggle"
+      aria-label="Switch color theme">☀</button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">PERSONAL TRAINING • REAL RESULTS</p>
+        <h1>BUILD YOUR<br>STRONGER <span>SELF.</span></h1>
+        <p class="hero-text">
+          Train with purpose. Build lean muscle. Lose excess fat.
+          Become the strongest version of yourself with personalized coaching.
+        </p>
+        <div class="hero-buttons">
+          <a href="#programs" class="btn btn-primary">Explore Programs ↗</a>
+          <a href="#about" class="btn btn-outline">Meet Your Trainer</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>200+</strong><small>People Coached*</small></div>
+          <div><strong>1:1</strong><small>Personal Coaching</small></div>
+          <div><strong>100%</strong><small>Personalized Plans</small></div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-overlay"></div>
+        <div class="image-label">
+          <span class="status-dot"></span>
+          YOUR GOALS. YOUR PLAN.
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-image">
+        <img
+          src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=900&q=85"
+          alt="Athlete training with weights in a gym"
+          loading="lazy">
+      </div>
+      <div class="about-content">
+        <p class="eyebrow">MEET YOUR COACH</p>
+        <h2>DISCIPLINE BUILDS<br><span>RESULTS.</span></h2>
+        <p>
+          Fitness is more than a workout. It's about building habits,
+          developing confidence, and creating a lifestyle you can sustain.
+        </p>
+        <p>
+          ITB's coaching approach combines structured training, practical
+          nutrition guidance, accountability, and individualized programming
+          to help you make measurable progress.
+        </p>
+        <ul class="check-list">
+          <li>✓ Certified Personal Training</li>
+          <li>✓ Nutrition Coaching</li>
+          <li>✓ Motivational Interviewing</li>
+          <li>✓ Individualized Training Programs</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Work With Me ↗</a>
+      </div>
+    </section>
+
+    <section class="section programs" id="programs">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">YOUR NEXT LEVEL STARTS HERE</p>
+          <h2>TRAIN WITH <span>PURPOSE.</span></h2>
+        </div>
+        <p>Choose a program that matches your goals and your lifestyle.</p>
+      </div>
+
+      <div class="program-grid">
+        <article class="program-card">
+          <img
+            src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=85"
+            alt="Strength training with weights" loading="lazy">
+          <div class="program-body">
+            <span class="program-number">01 / STRENGTH</span>
+            <h3>Build Muscle</h3>
+            <p>Progressive resistance training designed to build strength,
+              develop muscle, and improve performance.</p>
+            <a href="#contact" class="text-link"
+              data-program="Muscle Building">Choose Program ↗</a>
+          </div>
+        </article>
+
+        <article class="program-card">
+          <img
+            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=85"
+            alt="Modern gym training equipment" loading="lazy">
+          <div class="program-body">
+            <span class="program-number">02 / RECOMPOSITION</span>
+            <h3>Lose Fat</h3>
+            <p>Combine smart resistance training, sustainable nutrition,
+              and consistent habits to improve body composition.</p>
+            <a href="#contact" class="text-link"
+              data-program="Fat Loss">Choose Program ↗</a>
+          </div>
+        </article>
+
+        <article class="program-card">
+          <img
+            src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=800&q=85"
+            alt="Athlete exercising with a kettlebell" loading="lazy">
+          <div class="program-body">
+            <span class="program-number">03 / PERFORMANCE</span>
+            <h3>Get Stronger</h3>
+            <p>Improve conditioning, mobility, work capacity, and
+              real-world fitness through structured coaching.</p>
+            <a href="#contact" class="text-link"
+              data-program="Performance Training">Choose Program ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="results" id="results">
+      <div class="results-inner">
+        <p class="eyebrow">THE PROCESS MATTERS</p>
+        <h2>CONSISTENCY OVER<br><span>PERFECTION.</span></h2>
+        <p class="results-text">
+          Sustainable progress comes from a clear plan, consistent effort,
+          and coaching that adapts as you improve.
+        </p>
+        <div class="results-grid">
+          <div><strong>01</strong><h3>Assess</h3>
+            <p>Understand your goals, starting point, and lifestyle.</p></div>
+          <div><strong>02</strong><h3>Plan</h3>
+            <p>Build a personalized training and nutrition strategy.</p></div>
+          <div><strong>03</strong><h3>Execute</h3>
+            <p>Train consistently and build lasting habits.</p></div>
+          <div><strong>04</strong><h3>Progress</h3>
+            <p>Track performance and adjust your plan over time.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="contact-info">
+        <p class="eyebrow">LET'S GET STARTED</p>
+        <h2>YOUR GOALS.<br><span>OUR MISSION.</span></h2>
+        <p>
+          Ready to take the next step? Tell us about your goals,
+          and let's discuss a training plan that works for you.
+        </p>
+        <div class="contact-detail">
+          <span>01</span>
+          <div><strong>Personalized Coaching</strong>
+            <p>A plan built around your needs.</p></div>
+        </div>
+        <div class="contact-detail">
+          <span>02</span>
+          <div><strong>Accountability</strong>
+            <p>Structure and support throughout your journey.</p></div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <h3>Start Your Journey</h3>
+        <p>Complete the form to tell us what you're working toward.</p>
+
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text"
+          placeholder="Your name" required>
+
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="email"
+          placeholder="you@example.com" required>
+
+        <label for="goal">Primary Fitness Goal</label>
+        <select id="goal" name="goal" required>
+          <option value="">Select your goal</option>
+          <option>Build Muscle</option>
+          <option>Fat Loss</option>
+          <option>Body Recomposition</option>
+          <option>Strength and Performance</option>
+          <option>General Fitness</option>
+        </select>
+
+        <label for="message">Tell US About Your Goals</label>
+        <textarea id="message" name="message" rows="4"
+          placeholder="What would you like to achieve?"></textarea>
+
+        <button type="submit" class="btn btn-primary form-button">
+          Send Inquiry ↗
+        </button>
+        <p class="form-status" id="formStatus" role="status"
+          aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">ITB<span>.</span></a>
+    <p>Train with purpose. Live with strength.</p>
+    <p>© <span id="year"></span> ITB Personal Training.</p>
+  </footer>
+
+</body>
+</html>

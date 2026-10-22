@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Barbershop</title>
+    <!---CSS-->
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/calendar.css">
+</head>
+
+<body>
+<!--Header/Navbar-->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="#" class="logo" id="logo">Vintage Barbershop</a>
+        <nav class="nav" id="nav" aria-label="Main navigation"></nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"></div>
+</header>
+
+<!--Hero Section-->
+<section class="hero" id="hero">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <h1 id="heroHeading">Classic Cuts. Clean Shaves. Vintage Style.</h1>
+            <p id="heroSubtext">Experience the tradition of true barbershop-precision fades, straight-razor shaves, and a welcoming atmosphere.</p>
+            <div class="hero-actions">
+               <a href="#cta" class="btn btn-primary" id="bookBtn">Book an Appointment</a>
+               <a href="#features" class="btn btn-secondary" id="servicesBtn">View Services</a>
+            </div>
+        </div>
+
+      <div class="hero-media">
+        <!--Replace src with your provided hero image-->
+        <img
+        src="Assets/Images/hero.jpg"
+        alt="Barbershop Hero"
+        class="hero-img"
+        id="heroImg">
+      </div>
+    </div>    
+</section>
+<section class="features" id="features">
+    <div class="container">
+        <h2 class="section-title" id="featuresTitle">Services</h2>
+        <p class="section-subtitle" id="featuresSubtitle">Quality grooming services designed for comfort, style, and confidence.</p>
+        <div class="feature-grid" id="featureGrid"></div>
+    </div>
+</section>
+
+        <!---Call to action section-->
+        <section class="cta" id="cta">
+            <div class="container cta-inner">
+                <div class="cta-text">
+                    <h2 id="ctaHeading">Ready for a fresh look?</h2>
+                    <p id="ctaText">Walk-ins welcome, appointments recommended. Book today and leave looking sharp</p>
+                </div>
+                <div class="cta-actions">
+                    <button class="btn btn-secondary" id="ctaBtn">Book Now</button>
+                    <button class="btn btn-secondary" id="callBtn">Call Us</button>
+                </div>
+            </div>
+    <!--Add Calendar Node-->
+            <div class="container booking-layout">
+                <div class="calendar-card">
+                    <div class="calendar-header">
+                        <button class="calendar-nav-btn" id="prevMonthBtn">←</button>
+                        <h3 id="calendarMonthLabel">Month Year</h3>
+                        <button class="calendar-nav-btn" id="nextMonthBtn">→</button>
+                    </div>
+                <div class="calendar-weekdays">
+                        <span>Sun</span>
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                </div>
+                <div class="calendar-grid" id="calendarGrid"></div>
+                </div>
+
+                <div class="booking-panel">
+                    <h3 class="booking-panel-title">Book Your Appointment</h3>
+                    <p class="selected-date-text">Selected Date:
+                        <span id="selectedDateText">Choose a date</span>
+                    </p>
+                <div class="time-slots" id="timeSlots"></div>
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <label for="customerName">Name</lable>
+                            <input
+                            type="text"
+                            id="customerName"
+                            placeholder="Enter your name"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="customerService">Service</label>
+                            <select id="customerService">
+                                <option value="">Choose a service</option>
+                                <option value="Classic Haircut"> Classic Haircut</option>
+                                <option value="Bear Trim">Beard Trim</option>
+                                <option value="Straight Razor Shave">Straight Razor Shave</option>
+                                <option value="Fade & Cut">Fade & Cut</option>
+                            </select>
+                    </div>
+                    <input type="hidden" id="selectedTimeInput"/>
+                    <button type="submit" class="btn btn-primary booking-submit-btn">Confirm Booking</button>
+                    <p id="bookingMessage" class="booking-message"></p>
+                    </form>
+                </div>
+            </div>
+            <!--Optional CTA Image (replace with provided assets if you have one)-->
+            <!--<img src=assets/images/cta.jpg" alt="CTA Background" class="cta-img"-->
+        </section>
+        <!-- ====== Footer Section ====== -->
+         <footer class="site-footer" id="footer">
+            <div class="container footer-inner">
+                <div class="footer-col">
+                    <h3 class="footer-title">Vintage Barbershop</h3>
+                    <p class="footer-text">Old-school service. Modern craftsmanship.</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Hours</h4>
+                    <ul class="footer-list" id="hoursList">
+                        <li>Mon - Fri: 9:00 AM - 7:00 PM</li>
+                        <li>Sat: 10:00 AM - 5:00 PM</li>
+                        <li>Sun: Closed</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-list">
+                        <li>
+                         <a href="https://maps.google.com/?q=123+Main+St+Wahiawa+HI+96786" target="_blank" rel="noreferrer" class="footer-link" id="addressLink">123 Main St, Wahiawa, HI 96786</a>
+                        </li>
+                        <li>
+                         <a href="tel:+18081234567" class="footer-link" id="phoneLink">(808) 123-4567</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@vintagebarbershop.com" class="footer-link" id="emailLink">info@vintagebarbershop.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="container footer-bottom">
+                <p class="copyright">
+                    &copy; <span id="year"></span> Vintage Barbershop. All rights reserved.
+                </p>
+            </div>
+         </footer>
+         <!--Service Details Modal-->
+         <div class="service-modal" id="serviceModal" aria-hidden="true">
+            <div class="service-modal-overlay" id="serviceModalOverlay"></div>
+            <div
+              class="service-modal-content"
+              role="dialog"
+              aria-modal="true"
+              aria-labelledby="serviceModalTitle">
+            
+        <button class="service-modal-close"
+         id="serviceModalClose" 
+         aria-label="Close modal">
+        
+        x
+        </button>
+        <h3 id="serviceModalTitle">Service Details</h3>
+        <p id="serviceModalPrice" class="service-modal-price"></p>
+        <ul id="serviceModalList" class="service-modal-list"></ul>
+         </div>
+        </div>
+        <!--35-->
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/calendar.js"></script>
+
+</body>
+</html>

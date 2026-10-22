@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Subscribe to updates from A.MillionBooks.">
+    <title>Subscribe | A.MillionBooks</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="subscribe-page">
+    <header class="site-header">
+        <div class="container header-inner subscribe-header">
+            <a class="logo" href="index.html">A.MillionBooks</a>
+            <nav class="subscribe-nav" aria-label="Main navigation">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="subscribe.html" aria-current="page">Subscribe</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container subscribe-main">
+        <section class="subscribe-card" aria-labelledby="subscribe-title">
+            <p class="subscribe-eyebrow">A little good news for your inbox</p>
+            <h1 id="subscribe-title">Stay in the reading loop</h1>
+            <p class="subscribe-intro">Get book reviews, reading updates, and little glimpses of life delivered straight to your inbox.</p>
+
+            <form class="subscribe-form" id="subscribeForm">
+                <label for="subscriberName">Your name <span class="optional-label">(optional)</span></label>
+                <input id="subscriberName" name="name" type="text" autocomplete="name" placeholder="How should I address you?">
+
+                <label for="subscriberEmail">Email address</label>
+                <input id="subscriberEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+
+                <button class="btn btn-primary subscribe-submit" type="submit">Subscribe</button>
+                <p class="subscribe-note">This form is a preview and does not send or store your information yet.</p>
+                <p class="subscribe-status" id="subscribeStatus" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="JavaScript/subscribe.js"></script>
+</body>
+</html>

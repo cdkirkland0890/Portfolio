@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Army Life | A.MillionBooks</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body class="gallery-page">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="logo" href="index.html">A.MillionBooks</a>
+        </div>
+    </header>
+
+    <main class="container gallery-main">
+        <a class="btn btn-primary" href="index.html#features">Back to the Albums</a>
+        <h1>Army Life!</h1>
+        <p class="section-subtitle">A little look into our Army life.</p>
+        <div class="gallery-grid">
+            <button class="gallery-item" type="button" aria-label="View Army life photo">
+                <img src="images/cor.jpg" alt="Army life">
+            </button>
+            <button class="gallery-item" type="button" aria-label="View Luke Pilot photo">
+                <img src="images/army1.jpg" alt="Luke Pilot">
+            </button>
+            <button class="gallery-item" type="button" aria-label="View helicopter photo">
+                <img src="images/army2.jpg" alt="Helicopter">
+            </button>
+            <button class="gallery-item" type="button" aria-label="View gas mask photo">
+                <img src="images/army3.jpg" alt="Gas Mask">
+            </button>
+        </div>
+    </main>
+    <dialog class="image-lightbox" id="imageLightbox" aria-label="Expanded photo">
+        <button class="lightbox-close" type="button" aria-label="Close expanded photo">&times;</button>
+        <img class="lightbox-image" id="lightboxImage" alt="">
+    </dialog>
+    <script src="JavaScript/gallery.js"></script>
+</body>
+</html>

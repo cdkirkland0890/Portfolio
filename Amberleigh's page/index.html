@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A-Million Books</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/e513f4361b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<body>
+<!--Header/Navbar-->
+<header class="site-header">
+    <div class="container header-inner">
+        <a href="https://www.instagram.com/a.millionbooks/?hl=en">
+       <i class="fa-brands fa-instagram fa-2x"></i></a>
+       <a href="https://www.facebook.com/aleighmillion"><i class="fa-brands fa-square-facebook fa-2x"></i></a>
+    
+        <nav class="nav" id="nav" aria-label="Main navigation"></nav>
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu"></div>
+</header>
+
+<!--Hero Section-->
+<section class="hero" id="hero">
+    <div class="container hero-inner">
+        <div class="hero-text">
+            <h1 id="heroHeading">Books. Reviews. Life.</h1>
+            <p id="heroSubtext">Ebooks • Plants • Thrifting • Coffee • Boy Mom • Army Wife • Midwestern girl living in Hawaii 🌺•📚 Book Reviews • Reading</p>
+            <p>Follow me on instagram for more bookish fun!</p>
+            <div class="hero-actions">
+               <a href="#cta" class="btn btn-primary" id="bookBtn">Book List!</a>
+               <a href="#features" class="btn btn-secondary" id="servicesBtn">Albums!</a>
+            </div>
+        </div>
+
+      <div class="hero-media">
+        <!--Replace src with your provided hero image-->
+        <img
+        src="../Amberleigh's page/images/amilliprofile.jpg"
+        alt="Amberleigh Profile"
+        class="hero-img"
+        id="heroImg">
+      </div>
+    </div>    
+    <div class="container favorites-carousel" id="favoritesCarousel" aria-label="Favorite books">
+        <h2 class="favorites-title">A Few of My Favorites</h2>
+        <div class="carousel-content">
+            <button class="carousel-control" id="favoritePrevious" type="button" aria-label="Show previous favorite book">&lsaquo;</button>
+            <figure class="favorite-slide" aria-live="polite">
+                <img class="favorite-image" id="favoriteImage" src="images/favorites/abc.jpg" alt="A favorite book">
+                <figcaption class="favorite-caption" id="favoriteCaption">One of my favorite reads</figcaption>
+            </figure>
+            <button class="carousel-control" id="favoriteNext" type="button" aria-label="Show next favorite book">&rsaquo;</button>
+        </div>
+        <div class="carousel-dots" id="favoriteDots" aria-label="Choose a favorite book"></div>
+    </div>
+</section>
+<section class="features" id="features">
+    <div class="container">
+        <h2 class="section-title" id="featuresTitle">Books and Family ♥</h2>
+        <p class="section-subtitle" id="featuresSubtitle">A little look into my life.</p>
+        <div class="feature-grid" id="featureGrid"></div>
+    </div>
+</section>
+
+        <!---Call to action section-->
+        <section class="cta" id="cta">
+            <div class="container cta-inner">
+                <div class="cta-text">
+                    <h2 id="ctaHeading">Check out some good book gift ideas for the readers in your life!</h2>
+                </div>
+                <div class="cta-actions">
+                    <a href="https://www.amazon.com/hz/wishlist/ls/AWK8GSPAO98V?ref_=wl_share">
+                    <button class="btn btn-primary" id="ctaBtn" style="font-size: 18px">Amazon Wish List</button></a>
+                    <a href="https://www.goodreads.com/review/list/48899891?shelf=to-read">
+                    <button class="btn btn-primary" id="ctaBtn" style="font-size: 18px">Good Reads Favorites</button></a>
+                    <a href="https://pangobooks.com/AMILLIONBOOKS">
+                    <button class="btn btn-primary" id="ctaBtn" style="font-size: 18px">Pango Books</button></a>
+                    <a href="https://www.mercari.com/invitations/?iv_code=TVDWQN">
+                        <button class="btn btn-primary" id="ctaBtn" style="font-size: 18px">
+                        Mercari Invitation</button>
+                    </a>
+                    <a href="https://www.thriftbooks.com/">
+                        <button class="btn btn-primary" id="ctaBtn" style="font-size: 18px">Thrift Books</button>
+                    </a>
+                </div>  
+            </div>
+
+            <!--Optional CTA Image (replace with provided assets if you have one)-->
+            <!--<img src=assets/images/cta.jpg" alt="CTA Background" class="cta-img"-->
+        </section>
+        <!-- ====== Footer Section ====== -->
+         <footer class="site-footer" id="footer">
+            <div class="container footer-inner">
+                <div class="footer-col">
+                    <h3 class="footer-title">AMillionBooks</h3>
+                    <p class="footer-text">A million stories. A million feelings. One honest review at a time. 💕📖</p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Review Schedule</h4>
+                    <ul class="footer-list" id="hoursList">
+                        <li>Mon - Fri: Reviews Uploaded 12:00pm</li>
+                        <li>Sat - Sun: Family Time!</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-list">
+                        <li>
+                         <a href="https://maps.google.com/?q=123+Main+St+Wahiawa+HI+96786" target="_blank" rel="noreferrer" class="footer-link" id="addressLink">123 Main St, Wahiawa, HI 96786</a>
+                        </li>
+                        <li>
+                         <a href="tel:+18081234567" class="footer-link" id="phoneLink">(808) 123-4567</a>
+                        </li>
+                        <li>
+                            <a href="mailto:info@vintagebarbershop.com" class="footer-link" id="emailLink">info@amillionbooks.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="container footer-bottom">
+                <p class="copyright">
+                    &copy; <span id="year"></span> AMillionBooks. All rights reserved.
+                </p>
+            </div>
+         </footer>
+    <script src="JavaScript/main.js"></script>
+
+</body>
+</html>
+</body>
+</html>
