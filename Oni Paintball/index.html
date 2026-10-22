@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description"
+        content="Follow Austin Oni Paintball. Competitive paintball, team culture, tournament results, and the road to the next event.">
+
+  <title>Austin Oni Paintball | Built to Compete</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="/Oni Paintball/styles.css">
+  <script src="/Oni Paintball/index.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+
+      <div class="brand-group">
+        <a href="#home" class="brand" aria-label="Austin Oni home">
+          <span class="brand-mark">鬼</span>
+          <span class="brand-copy">
+            <strong>AUSTIN ONI</strong>
+            <small>COMPETITIVE PAINTBALL</small>
+          </span>
+        </a>
+
+        <div class="header-socials" aria-label="Austin Oni social media">
+          <a href="https://www.facebook.com/AustinOniPaintball"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Austin Oni on Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2v-2c0-.9.3-1.5 1.6-1.5h1.7V3.2c-.3 0-1.3-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.4v2.2H7.3v3.2h2.8V21h3.4Z" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/oni_paintball/"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Austin Oni on Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+              <circle cx="17.7" cy="6.6" r="1.2" fill="currentColor"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <button class="menu-toggle"
+              id="menuToggle"
+              aria-label="Open navigation menu"
+              aria-expanded="false"
+              aria-controls="navLinks">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">THE TEAM</a>
+        <a href="#results">RESULTS</a>
+        <a href="#sponsors">PARTNERS</a>
+        <a href="#contact" class="nav-cta">CONNECT WITH ONI ↗</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+
+      <div class="container hero-content reveal">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="red-dot"></span>
+            AUSTIN, TEXAS · TOURNAMENT PAINTBALL
+          </p>
+
+          <h1>
+            BUILT TO<br>
+            <span>COMPETE.</span>
+          </h1>
+
+          <p class="hero-description">
+            Speed. Strategy. Brotherhood.
+            Every point is earned. Every match is a test.
+            Welcome to Austin Oni.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#about" class="button button-primary">
+              MEET THE TEAM <span>↘</span>
+            </a>
+
+            <a href="https://www.instagram.com/oni_paintball/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="button button-outline">
+              FOLLOW OUR JOURNEY ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img src="assets/heroimg.jpg" alt="Austin Oni samurai emblem">
+        </div>
+
+        <div class="hero-bottom">
+          <span>DISCIPLINE UNDER PRESSURE</span>
+          <span>01 / AUSTIN ONI</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team ticker -->
+    <div class="ticker" aria-label="Team values">
+      <div class="ticker-track">
+        <div class="ticker-group">
+          <span>ONE TEAM</span><i>✳</i>
+          <span>ONE MISSION</span><i>✳</i>
+          <span>EVERY POINT MATTERS</span><i>✳</i>
+        </div>
+        <div class="ticker-group" aria-hidden="true">
+          <span>ONE TEAM</span><i>✳</i>
+          <span>ONE MISSION</span><i>✳</i>
+          <span>EVERY POINT MATTERS</span><i>✳</i>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-visual reveal"
+             id="aboutCarousel"
+             role="region"
+             aria-roledescription="carousel"
+             aria-label="Austin Oni paintball photos">
+          <img
+            class="carousel-image"
+            src="assets/carousell1.jpg"
+            alt="Austin Oni players competing on the paintball field"
+            loading="lazy">
+
+          <div class="image-tag">
+            <span class="red-dot"></span>
+            BUILT DIFFERENT. PLAY DIFFERENT.
+          </div>
+
+          <div class="carousel-controls">
+            <button class="carousel-arrow"
+                    type="button"
+                    data-carousel-previous
+                    aria-label="Show previous photo">←</button>
+            <span class="carousel-status" aria-live="polite">1 / 3</span>
+            <div class="carousel-indicators" aria-label="Choose a photo">
+              <button class="carousel-indicator active"
+                      type="button"
+                      data-carousel-slide="0"
+                      aria-label="Show photo 1"
+                      aria-current="true"></button>
+              <button class="carousel-indicator"
+                      type="button"
+                      data-carousel-slide="1"
+                      aria-label="Show photo 2"></button>
+              <button class="carousel-indicator"
+                      type="button"
+                      data-carousel-slide="2"
+                      aria-label="Show photo 3"></button>
+            </div>
+            <button class="carousel-arrow"
+                    type="button"
+                    data-carousel-next
+                    aria-label="Show next photo">→</button>
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="eyebrow">MORE THAN A TEAM</p>
+
+          <h2>
+            THIS IS<br>
+            <span>THE ONI WAY.</span>
+          </h2>
+
+          <p>
+            Austin Oni is a competitive paintball team built around
+            teamwork, discipline, communication, and the drive to
+            get better every time we step onto the field.
+          </p>
+
+          <p>
+            From practice days to tournament weekends, our focus
+            stays the same: trust your teammates, execute the plan,
+            and compete until the final point.
+          </p>
+
+          <div class="values-grid">
+            <div class="value-item">
+              <span class="value-number">01</span>
+              <h3>DISCIPLINE</h3>
+              <p>Preparation creates confidence.</p>
+            </div>
+
+            <div class="value-item">
+              <span class="value-number">02</span>
+              <h3>TEAMWORK</h3>
+              <p>Five players. One purpose.</p>
+            </div>
+
+            <div class="value-item">
+              <span class="value-number">03</span>
+              <h3>EXECUTION</h3>
+              <p>Make every move count.</p>
+            </div>
+
+            <div class="value-item">
+              <span class="value-number">04</span>
+              <h3>GROWTH</h3>
+              <p>Earn the next level.</p>
+            </div>
+          </div>
+
+          <a class="text-link"
+             href="https://www.facebook.com/AustinOniPaintball"
+             target="_blank"
+             rel="noopener noreferrer">
+            GET TO KNOW ONI <span>↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Competition banner -->
+    <section class="competition">
+      <div class="container competition-content reveal">
+        <div>
+          <p class="eyebrow">THE COMPETITIVE MINDSET</p>
+          <h2>PLAY FAST. THINK FASTER.</h2>
+        </div>
+
+        <p>
+          Read the field. Trust the call. Win the next point.
+          The work starts long before the buzzer.
+        </p>
+      </div>
+    </section>
+
+    <!-- Tournament results -->
+    <section class="section results-section" id="results">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow">PROVEN ON THE FIELD</p>
+            <h2>THE <span>TRACK RECORD.</span></h2>
+          </div>
+
+          <a class="text-link"
+             href="https://pbleagues.com/team/dNu3dBqYKfitNP8J"
+             target="_blank"
+             rel="noopener noreferrer">
+            VIEW TEAM HISTORY ↗
+          </a>
+        </div>
+
+        <p class="section-intro">
+          Tournament snapshots from Austin Oni's published
+          competitive history. Results below are from 2024–2026.
+        </p>
+
+        <div class="results-grid">
+
+          <article class="result-card reveal">
+            <span class="result-year">2026</span>
+            <p class="result-event">MAXT SEASON OPENER</p>
+            <h3>22<span>ND</span></h3>
+            <p class="result-detail">OF 44 TEAMS</p>
+            <span class="result-division">DIVISION 4 X-BALL</span>
+          </article>
+
+          <article class="result-card featured reveal">
+            <span class="result-year">2025</span>
+            <p class="result-event">VIOLENCE OPEN</p>
+            <h3>8<span>TH</span></h3>
+            <p class="result-detail">OF 29 TEAMS</p>
+            <span class="result-division">DIVISION 4 X-BALL</span>
+          </article>
+
+          <article class="result-card reveal">
+            <span class="result-year">2024</span>
+            <p class="result-event">NXL WINDY CITY MAJOR</p>
+            <h3>4<span>TH</span></h3>
+            <p class="result-detail">OF 14 TEAMS</p>
+            <span class="result-division">DIVISION 5 X-BALL</span>
+          </article>
+
+        </div>
+
+        <p class="results-note">
+          See the linked league profile for additional details.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- Sponsors -->
+    <section class="section sponsors-section" id="sponsors">
+      <div class="container sponsor-grid reveal">
+
+        <div>
+          <p class="eyebrow">GROW WITH THE TEAM</p>
+          <h2>PARTNER WITH<br><span>THE ONI BRAND.</span></h2>
+          <div class="sponsor-partners">
+            <a class="partner-button"
+               href="https://maxtsportswear.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Maxt Sportswear website">
+              <img
+                src="https://maxtsportswear.com/cdn/shop/files/logo_Maxt2020-2_f10dc00e-d597-4a8e-a5f7-04107c168269.png?v=1613149045"
+                alt="Maxt Sportswear">
+              <span>VISIT WEBSITE ↗</span>
+            </a>
+
+            <a class="partner-button"
+               href="https://shelldaphotos.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Shellda Photos website">
+              <img
+                src="https://shelldaphotos.com/cdn/shop/files/Shellda_Logo_Website.png?v=1737774929"
+                alt="Shellda Photos">
+              <span>VISIT WEBSITE ↗</span>
+            </a>
+
+            <a class="partner-button"
+               href="https://outlawpb.com/"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Visit Outlaw Paintball website">
+              <img
+                src="https://outlawpb.com/wp-content/uploads/sites/13/2026/02/Outlaw-Paintball-Logo-e1770997821561.png"
+                alt="Outlaw Paintball">
+              <span>VISIT WEBSITE ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="sponsor-copy">
+          <p>
+            Interested in supporting competitive paintball?
+            We welcome conversations with brands, local businesses,
+            and partners who want to grow with the team.
+          </p>
+
+          <a href="mailto:REPLACE-WITH-TEAM-EMAIL@example.com"
+             class="button button-primary">
+            EXPLORE PARTNERSHIPS ↗
+          </a>
+          <small>Replace the sample email with the team's real contact address.</small>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-content reveal">
+        <p class="eyebrow">FOLLOW THE JOURNEY</p>
+        <h2>STAY IN<br><span>THE GAME.</span></h2>
+
+        <p>
+          Follow Austin Oni for team updates, event coverage,
+          tournament weekends, and life on the field.
+        </p>
+
+        <div class="contact-actions">
+          <a href="https://www.instagram.com/oni_paintball/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="button button-primary">
+            <span>◎</span> FOLLOW ON INSTAGRAM
+          </a>
+
+          <a href="https://www.facebook.com/AustinOniPaintball"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="button button-outline">
+            f &nbsp; FOLLOW ON FACEBOOK
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#home" class="brand">
+        <span class="brand-mark">鬼</span>
+        <span class="brand-copy">
+          <strong>AUSTIN ONI</strong>
+          <small>COMPETITIVE PAINTBALL</small>
+        </span>
+      </a>
+
+      <p>BUILT TO COMPETE. UNITED AS ONI.</p>
+
+      <a href="#top" class="back-top" aria-label="Back to top">↑</a>
+    </div>
+
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> AUSTIN ONI</span>
+      <span>MADE FOR THE LOVE OF THE GAME.</span>
+    </div>
+  </footer>
+
+</body>
+</html>

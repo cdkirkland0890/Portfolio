@@ -624,6 +624,28 @@ h1 em, h2 em, .intro-statement em {
     transform: none;
 }
 
+.project-image.oni-brand-preview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #111;
+}
+
+.project-image.oni-brand-preview::after {
+    display: none;
+}
+
+.project-image.oni-brand-preview img {
+    width: min(72%, 290px);
+    height: 90%;
+    object-fit: contain;
+    transition: none;
+}
+
+.project-image.oni-brand-preview:hover img {
+    transform: none;
+}
+
 .wyze-brand-copy {
     display: flex;
     flex-direction: column;
