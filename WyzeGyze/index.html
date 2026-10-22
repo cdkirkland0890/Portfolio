@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Wyze Guyz Tattoo Parlor</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://kit.fontawesome.com/e513f4361b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="container nav">
+            <div class="social-links">
+                <a href="https://www.instagram.com/wyzeguyztattoo/?hl=en"
+                   aria-label="Instagram">
+                    <i class="fa-brands fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://www.facebook.com/WYZEGUYZTATTOOPARLOR"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-square-facebook fa-2x"></i>
+                </a>
+            </div>
+            <a class="brand" href="#home">
+                <img class="brand-logo" src="assets/logo2.jpg" alt="">
+                <strong>WYZE GUYZ</strong>
+                <span>TATTOO PARLOR</span>
+            </a>
+
+            <button class="menu-toggle"
+                    id="menuToggle"
+                    aria-expanded="false">
+                MENU ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#testimonials">Testimonials</a>
+                <a href="HTML/shop.html">Merchandise</a>
+                <a href="#booking">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-layout">
+                    <div class="hero-content">
+                        <p class="eyebrow">
+                            El Paso, Texas · Custom Tattooing & Piercings
+                        </p>
+
+                        <h1>Your Story.<br>
+                            <em>Your Ink.</em>
+                        </h1>
+
+                        <p>
+                            Bring your idea, your inspiration, or
+                            the beginning of a vision. Let's turn
+                            it into artwork made for you.
+                        </p>
+
+                        <a class="button" href="#booking">
+                            Request an Appointment
+                        </a>
+                    </div>
+
+                    <aside class="instagram-feed" aria-label="Instagram feed">
+                        <a class="instagram-feed-heading"
+                           href="https://www.instagram.com/wyzeguyztattoo/?hl=en"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            <span>Follow @wyzeguyztattoo</span>
+                        </a>
+                        <iframe
+                            src="https://www.instagram.com/wyzeguyztattoo/embed"
+                            title="Wyze Guyz Tattoo Parlor Instagram profile"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            allowtransparency="true">
+                        </iframe>
+                        <a class="instagram-feed-fallback"
+                           href="https://www.instagram.com/wyzeguyztattoo/?hl=en"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            View the latest posts on Instagram
+                        </a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!--Make admin login page to manage review approval and publish to testimonials block -->
+        <section class="services" id="testimonials">
+            <div class="container">
+                <h2 id="testimonialsHeading">What Clients Are Saying.</h2>
+
+                <div class="testimonial-carousel"
+                     role="region"
+                     aria-roledescription="carousel"
+                     aria-labelledby="testimonialsHeading">
+
+
+                    <div class="testimonial-slides" aria-live="polite">
+                        <figure class="testimonial-slide"
+                                role="group"
+                                aria-roledescription="slide"
+                                aria-label="1 of 3">
+                            <button class="testimonial-photo-trigger"
+                                    type="button"
+                                    aria-label="View larger testimonial photo">
+                                <img class="testimonial-photo"
+                                     src="assets/review1.jpg"
+                                     alt="Client tattoo review photo">
+                            </button>
+                            <blockquote>
+                                Amazing experience from consult to finished masterpiece by Art. The only place I will have any more work done.  Just Amazing 10/10 highly recommend. Incredible artists · Beautiful results · Free consultation · Amazing results · Experienced tattoo artists
+                            <!--All reviews like this (dont forget pictures)-->
+                            </blockquote>
+                            <figcaption></figcaption>
+                        </figure>
+
+
+                        <figure class="testimonial-slide"
+                                role="group"
+                                aria-roledescription="slide"
+                                aria-label="2 of 3"
+                                hidden>
+                            <button class="testimonial-photo-trigger"
+                                    type="button"
+                                    aria-label="View larger testimonial photo">
+                                <img class="testimonial-photo"
+                                     src="assets/review2.jpg"
+                                     alt="Client tattoo review photo">
+                            </button>
+                            <blockquote>
+                                I sent my husband to get a tattoo from Omar Macias, since his work looked great on reviews. Omar is better than the photos give him credit for. He is an unbelievably talented artist! The tattoo looks better than the original. A living piece of great art with incredible detail!! Incredible artists.
+                            </blockquote>
+                            <figcaption>Artist - Omar</figcaption>
+                        </figure>
+
+
+                        <figure class="testimonial-slide"
+                                role="group"
+                                aria-roledescription="slide"
+                                aria-label="3 of 3"
+                                hidden>
+                            <button class="testimonial-photo-trigger"
+                                    type="button"
+                                    aria-label="View larger testimonial photo">
+                                <img class="testimonial-photo"
+                                     src="assets/review3.jpg"
+                                     alt="Client tattoo review photo">
+                            </button>
+                            <blockquote>
+                                They are professional and have a very clean place. All they guys there are friendly and welcoming.  Omar did an amazing job! He was pleasant to chat with. Omar makes you feel at home and comfortable! Can’t wait to go back.
+                            </blockquote>
+                            <figcaption></figcaption>
+                        </figure>
+                    </div>
+                    <div class="testimonial-controls">
+                        <button class="testimonial-control"
+                                type="button"
+                                data-direction="-1"
+                                aria-label="Previous testimonial">
+                            Previous
+                        </button>
+                        <span class="testimonial-position" aria-hidden="true">1 / 3</span>
+                        <button class="testimonial-control"
+                                type="button"
+                                data-direction="1"
+                                aria-label="Next testimonial">
+                            Next
+                        </button>
+                    </div>
+                    <a class="button review-cta" href="HTML/review.html">
+                        Leave a Review
+                    </a>
+                    <a class="button secondary review-cta"
+                       href="https://www.facebook.com/WYZEGUYZTATTOOPARLOR"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        See more reviews on Facebook
+                    </a>
+                    <div class="customer-reviews"
+                         id="customerReviews"
+                         aria-labelledby="customerReviewsHeading">
+                        <h3 id="customerReviewsHeading">Customer Reviews</h3>
+                        <p class="customer-review-status"
+                           id="customerReviewStatus"
+                           role="status"
+                           aria-live="polite">Loading customer reviews...</p>
+                        <div class="customer-review-grid"
+                             id="customerReviewGrid"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Proof is in the pigment. Explore the gallery.</h2>
+                <p>Bring your ideas, references, and questions
+                   to start planning your next piece.</p>
+<!---Need adming login page to manage portfolio picture upload page (include dropdown for artist selection), need to attach to
+a photo storage / cloud server-->
+                <div class="portfolio-grid">
+                    <a class="portfolio-card" href="HTML/dope.html">
+                        <img class="portfolio-image"
+                             src="assets/comingsoon.png"
+                             alt="Placeholder for Dope's portfolio image">
+                        <div class="portfolio-card-content">
+                            <span class="portfolio-label">Portfolio</span>
+                            <h3>Dope</h3>
+                            <p>View this collection.</p>
+                        </div>
+                    </a>
+                    <a class="portfolio-card" href="HTML/danny.html">
+                        <img class="portfolio-image"
+                             src="assets/comingsoon.png"
+                             alt="Placeholder for Danny's portfolio image">
+                        <div class="portfolio-card-content">
+                            <span class="portfolio-label">Portfolio</span>
+                            <h3>Danny</h3>
+                            <p>View this collection.</p>
+                        </div>
+                    </a>
+                    <a class="portfolio-card" href="HTML/maya.html">
+                        <img class="portfolio-image"
+                             src="assets/comingsoon.png"
+                             alt="Placeholder for Maya's portfolio image">
+                        <div class="portfolio-card-content">
+                            <span class="portfolio-label">Portfolio</span>
+                            <h3>Maya</h3>
+                            <p>View this collection.</p>
+                        </div>
+                    </a>
+                    <a class="portfolio-card" href="HTML/omar.html">
+                        <img class="portfolio-image"
+                             src="assets/comingsoon.png"
+                             alt="Placeholder for Omar's portfolio image">
+                        <div class="portfolio-card-content">
+                            <span class="portfolio-label">Portfolio</span>
+                            <h3>Omar</h3>
+                            <p>View this collection.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--- booing is a bad ID because booking will require a phone call, not a website request. Change in time, keep uniformed through supporting 
+        documents for now-->
+        <section id="booking">
+            <div class="container">
+                <h2>Let's Talk Ink.</h2>
+
+                <form id="bookingForm">
+                    <label for="name">Your Name</label>
+                    <input id="name" name="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input id="email" name="email"
+                           type="email" required>
+
+                    <label for="service">Service</label>
+                    <select id="service" name="service" required>
+                        <option value="">Choose a service</option>
+                        <option>Custom tattoo</option>
+                        <option>Cover-up</option>
+                        <option>Piercing</option>
+                    </select>
+
+                    <label for="details">Tell Us About Your Idea</label>
+                    <textarea id="details"
+                              name="details"></textarea>
+
+                    <button class="button" type="submit">
+                        Send Inquiry
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>© <span id="year"></span> Wyze Guyz Tattoo Parlor</p>
+            <div class="business-hours">
+                <h2>Business Hours</h2>
+                <dl>
+                    <div>
+                        <dt>Sunday</dt>
+                        <dd>Closed</dd>
+                    </div>
+                    <div>
+                        <dt>Monday</dt>
+                        <dd>Closed</dd>
+                    </div>
+                    <div>
+                        <dt>Tuesday-Friday</dt>
+                        <dd>11:00AM - 7:00PM</dd>
+                    </div>
+                </dl>
+            </div>
+
+<!--Contact information needs updating-->
+            <div class="footer-contact">
+                <h2>Contact</h2>
+                <dl>
+                    <div>
+                        <dt>Phone</dt>
+                        <dd>(915) 231-6677</dd>
+                    </div>
+                    <div>
+                        <dt>Email</dt>
+                        <dd><a href="mailto:wyzeguyztat2@gmail.com">wyzeguyztat2@gmail.com</a></dd>
+                    </div>
+                    <div>
+                        <dt>Address</dt>
+                        <dd>3012 Lee Travino Dr B, El Paso, Texas 79936</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </footer>
+
+    <dialog class="image-lightbox"
+            id="imageLightbox"
+            aria-label="Expanded testimonial photo">
+        <button class="lightbox-close" type="button" aria-label="Close image">
+            &times;
+        </button>
+        <img class="lightbox-image" id="lightboxImage" alt="">
+    </dialog>
+
+    <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/testimonial-carousel.js"></script>
+    <script src="JavaScript/customer-reviews.js"></script>
+    <script src="JavaScript/gallery-lightbox.js"></script>
+</body>
+</html>

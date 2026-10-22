@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jordan & Jordan Property Services — repairs, maintenance, painting, junk removal, and pressure washing.">
+  <title>Jordan & Jordan Property Services</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="https://kit.fontawesome.com/e513f4361b.js" crossorigin="anonymous"></script>
+  
+</head>
+
+<body>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">
+        <div class="logo">JJ</div>
+        <div>
+          <div class="brand-title">Jordan and Jordan</div>
+          <div class="brand-services">SERVICES</div>
+          <div class="brand-tag">PROFESSIONAL PROPERTY SERVICES</div>
+          <!--default picture url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85") line 167 on CSS-->
+        </div>
+      </a>
+<!-- figma (gradient)-->
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <nav id="mainNav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a> <!---line 316 on css to change images <make into carousell>-->
+        <a href="contact.html">Contact</a>
+         <a href="testimonials.html">Testimonials</a>
+
+         <div class="social-links">
+                <a href="https://www.facebook.com/jjpropertyservicesga"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-square-facebook fa-2x"></i>
+                </a>
+            </div>
+      </nav>
+      <button class="btn btn-primary estimate-trigger">
+        Request an Estimate
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-copy">
+          <div class="eyebrow">Professional property care</div>
+          <h1>Professional Property Services. <span>Done Right.</span></h1>
+          <p>
+            Repairs, maintenance, painting, junk removal, pressure washing,
+            and more—helping homeowners, landlords, property managers,
+            and builders keep every property at its best.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#services">Explore Our Services</a>
+            <button class="btn btn-outline estimate-trigger">
+              Request an Estimate
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">How we can help</div>
+          <h2>Property Services You Can Count On</h2>
+          <p>Practical solutions, dependable service, and attention to detail.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <div class="service-icon">⚒</div>
+            <h3>Repairs &amp; Maintenance</h3>
+            <div class="rule"></div>
+            <p>From small fixes to routine upkeep, we help keep your property in top condition and prevent bigger problems.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">▱</div>
+            <h3>Painting &amp; Finishing</h3>
+            <div class="rule"></div>
+            <p>Fresh coats, clean lines, and quality finishing work that enhances the look and value of your property.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">▤</div>
+            <h3>Junk Removal</h3>
+            <div class="rule"></div>
+            <p>We remove unwanted items, debris, and clutter—quickly, safely, and with no hassle.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-icon">♧</div>
+            <h3>Pressure Washing</h3>
+            <div class="rule"></div>
+            <p>Restore curb appeal with pressure washing for driveways, siding, decks, patios, and more.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-carousel" role="region"
+          aria-label="Property photos" aria-roledescription="carousel">
+          <div class="about-slide" role="group" aria-roledescription="slide"
+            aria-label="1 of 1">
+
+            <!--Placeholder Carousell picture (lines 113 - 115)-->
+            <img 
+              src="Images/deck1.jpg"
+              alt="Well-maintained residential property">
+          </div>
+          <!--Add Carousell Pictures here-->
+          <div class="about-slide" role="group" aria-roledescription="slide">
+            <img src="Images/inside1.jpg" alt="Home Interior">
+          </div>
+          <!---Picture 3 goes here inside new div element, removed placeholder picture later-->
+          <div class="carousel-controls">
+            <button class="carousel-button" id="previousPhoto"
+              type="button" aria-label="Previous photo">‹</button>
+            <span class="carousel-count" id="photoCount" aria-live="polite">1 / 1</span>
+            <button class="carousel-button" id="nextPhoto"
+              type="button" aria-label="Next photo">›</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="eyebrow">Your property, our priority</div>
+          <h2>Reliable Help for Every Kind of Property</h2>
+          <p>
+            Whether you’re taking care of your home, preparing a rental
+            between tenants, managing multiple properties, or keeping a
+            project moving, Jordan &amp; Jordan Property Services is here to help.
+          </p>
+          <p>
+            We bring a practical, service-first approach to property care,
+            with clear communication and attention to detail.
+          </p>
+
+          <div class="values">
+            <div class="value"><span>✓</span> Dependable service</div>
+            <div class="value"><span>✓</span> Detail focused</div>
+            <div class="value"><span>✓</span> Solutions that fit</div>
+          </div>
+
+          <button class="btn btn-primary estimate-trigger">
+            Tell Us About Your Project
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="promise">
+      <p>REPAIR. &nbsp; MAINTAIN. &nbsp; FINISH. &nbsp; IMPROVE.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-row">
+        <div class="contact-block">
+          <div class="contact-symbol">⌂</div>
+          <div>
+            <strong>Quality Property Services</strong>
+            <small>FOR HOMES, RENTALS, AND INVESTMENTS.</small>
+          </div>
+        </div>
+
+        <div class="contact-divider"></div>
+
+        <div class="contact-block">
+          <div class="contact-symbol">➤</div>
+          <div>
+            <strong>Get Started Today</strong>
+            <small>REQUEST AN ESTIMATE</small>
+          </div>
+        </div>
+
+        <button class="btn btn-outline estimate-trigger">
+          Request an Estimate
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Jordan &amp; Jordan Property Services.</span>
+      <address class="footer-contact">
+        <span>Address: Your business address</span>
+        <a href="tel:+15555550100">Phone: (678) 400-9152)</a>
+        <a href="mailto:hello@example.com">Email: jjpropertyservicesga@gmail.com</a>
+      </address>
+      <span>Repair. Maintain. Finish. Improve.</span>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ESTIMATE REQUEST MODAL -->
+  <div class="modal-backdrop" id="estimateModal"
+    role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+
+    <div class="modal">
+      <button class="close" id="closeModal" aria-label="Close form">×</button>
+      <h2 id="modalTitle">Request an Estimate</h2>
+      <p>Tell us a little about your project.</p>
+
+      <form id="estimateForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Name *</label>
+            <input id="name" name="name" required autocomplete="name">
+          </div>
+
+          <div class="field">
+            <label for="email">Email *</label>
+            <input id="email" name="email" type="email"
+              required autocomplete="email">
+          </div>
+
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel">
+          </div>
+
+          <div class="field">
+            <label for="service">Service needed *</label>
+            <select id="service" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Repairs &amp; Maintenance</option>
+              <option>Painting &amp; Finishing</option>
+              <option>Junk Removal</option>
+              <option>Pressure Washing</option>
+              <option>Other / Multiple Services</option>
+            </select>
+          </div>
+
+          <div class="field full">
+            <label for="details">Project details *</label>
+            <textarea id="details" name="details" required
+              placeholder="What would you like help with?"></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button class="btn btn-primary" type="submit">Prepare Request</button>
+          <button class="btn btn-outline" type="button" id="cancelModal">Cancel</button>
+        </div>
+
+        <div id="form-message" role="status"></div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Estimate request modal
+    const modal = document.getElementById("estimateModal");
+
+    function openModal() {
+      modal.classList.add("open");
+      document.body.style.overflow = "hidden";
+      document.getElementById("name").focus();
+    }
+
+    function closeModal() {
+      modal.classList.remove("open");
+      document.body.style.overflow = "";
+    }
+
+    document.querySelectorAll(".estimate-trigger").forEach(button => {
+      button.addEventListener("click", openModal);
+    });
+
+    document.getElementById("closeModal")
+      .addEventListener("click", closeModal);
+
+    document.getElementById("cancelModal")
+      .addEventListener("click", closeModal);
+
+    modal.addEventListener("click", event => {
+      if (event.target === modal) closeModal();
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeModal();
+    });
+
+    // Automatic copyright year
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+    // About photo carousel
+    const slides = Array.from(document.querySelectorAll(".about-slide"));
+    const previousPhoto = document.getElementById("previousPhoto");
+    const nextPhoto = document.getElementById("nextPhoto");
+    const photoCount = document.getElementById("photoCount");
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      currentSlide = (index + slides.length) % slides.length;
+      slides.forEach((slide, slideIndex) => {
+        const isActive = slideIndex === currentSlide;
+        slide.hidden = !isActive;
+        slide.setAttribute("aria-label", `${slideIndex + 1} of ${slides.length}`);
+      });
+      photoCount.textContent = `${currentSlide + 1} / ${slides.length}`;
+      previousPhoto.disabled = slides.length < 2;
+      nextPhoto.disabled = slides.length < 2;
+    }
+
+    previousPhoto.addEventListener("click", () => {
+      showSlide(currentSlide - 1);
+    });
+
+    nextPhoto.addEventListener("click", () => {
+      showSlide(currentSlide + 1);
+    });
+
+    showSlide(currentSlide);
+
+    // Mobile navigation
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("mainNav");
+
+    toggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", isOpen);
+      toggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.textContent = "☰";
+      });
+    });
+
+    // Demo form: prepares request details but does not send them.
+    document.getElementById("estimateForm").addEventListener("submit", event => {
+      event.preventDefault();
+
+      const form = new FormData(event.currentTarget);
+      const request = [
+        "Estimate Request",
+        "Name: " + form.get("name"),
+        "Email: " + form.get("email"),
+        "Phone: " + (form.get("phone") || "Not provided"),
+        "Service: " + form.get("service"),
+        "",
+        "Project details:",
+        form.get("details")
+      ].join("\n");
+
+      const message = document.getElementById("form-message");
+      message.style.display = "block";
+      message.textContent =
+        "Your request is prepared below. This demo does not send submissions automatically.";
+
+      const draft = document.createElement("textarea");
+      draft.value = request;
+      draft.readOnly = true;
+      draft.style.cssText =
+        "width:100%;min-height:150px;margin-top:12px;padding:10px";
+
+      const previous = message.querySelector("textarea");
+      if (previous) previous.remove();
+
+      message.appendChild(draft);
+    });
+  </script>
+
+</body>
+</html>

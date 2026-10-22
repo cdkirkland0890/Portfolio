@@ -1,0 +1,14 @@
+{
+  "name": "jordan-and-jordan-property-services",
+  "private": true,
+  "scripts": {
+    "start": "node JavaScript/main.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.8",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "resend": "^6.34.1"
+  }
+}

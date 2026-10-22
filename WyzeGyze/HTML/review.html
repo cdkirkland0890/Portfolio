@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave a Review | Wyze Guyz Tattoo Parlor</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<!---This needs to be connected to live site and have some sort of photo storage attached / need to make admin login page for review approval-->
+<body>
+    <header>
+        <nav class="container nav">
+            <a class="brand" href="../index.html">
+                <img class="brand-logo" src="../assets/logo2.jpg" alt="">
+                <strong>WYZE GUYZ</strong>
+                <span>TATTOO PARLOR</span>
+            </a>
+            <a class="button secondary" href="../index.html#testimonials">
+                Back to reviews
+            </a>
+        </nav>
+    </header>
+
+    <main class="review-page">
+        <section class="review-section">
+            <div class="container review-container">
+                <p class="eyebrow">Your Experience Matters</p>
+                <h1>Leave a Review.</h1>
+                <p class="review-intro">
+                    Tell us about your tattoo experience and share a photo
+                    if you'd like.
+                </p>
+
+                <form class="review-form" id="reviewForm">
+                    <fieldset class="review-rating field full">
+                        <legend>Your Rating</legend>
+                        <div class="rating-options">
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="1" aria-label="1 star" required>
+                                <span aria-hidden="true">★</span>
+                                <span class="rating-value">1</span>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="2" aria-label="2 stars">
+                                <span aria-hidden="true">★★</span>
+                                <span class="rating-value">2</span>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="3" aria-label="3 stars">
+                                <span aria-hidden="true">★★★</span>
+                                <span class="rating-value">3</span>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="4" aria-label="4 stars">
+                                <span aria-hidden="true">★★★★</span>
+                                <span class="rating-value">4</span>
+                            </label>
+                            <label class="rating-option">
+                                <input type="radio" name="rating" value="5" aria-label="5 stars">
+                                <span aria-hidden="true">★★★★★</span>
+                                <span class="rating-value">5</span>
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="field">
+                        <label for="reviewName">Your Name</label>
+                        <input id="reviewName" name="name" autocomplete="name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="tattooDate">Date of Tattoo</label>
+                        <input id="tattooDate" name="tattooDate" type="date" required>
+                    </div>
+
+                    <div class="field full">
+                        <label for="reviewComments">Comments</label>
+                        <textarea id="reviewComments"
+                                  name="comments"
+                                  rows="6"
+                                  placeholder="Share your experience..."
+                                  required></textarea>
+                    </div>
+
+                    <div class="field full">
+                        <label for="reviewPhoto">Add a Picture (Optional)</label>
+                        <input id="reviewPhoto"
+                               name="photo"
+                               type="file"
+                               accept="image/jpeg,image/png,image/gif,image/webp">
+                        <p class="review-help">JPEG, PNG, GIF, or WebP; maximum 4 MB. The image will be visible with your review.</p>
+                        <img class="review-photo-preview"
+                             id="reviewPhotoPreview"
+                             alt="Preview of the selected review photo"
+                             hidden>
+                    </div>
+
+                    <div class="field full review-consent">
+                        <label for="reviewConsent">
+                            <input id="reviewConsent"
+                                   name="consent"
+                                   type="checkbox"
+                                   required>
+                            I agree that my name, rating, comments, tattoo date, and
+                            selected photo may be displayed publicly with my review.
+                        </label>
+                    </div>
+
+                    <p class="review-submit-note field full">
+                        Submissions are saved on this local development server and
+                        appear on the homepage. They are not sent to the public website.
+                    </p>
+                    <button class="button review-submit field full" type="submit">
+                        Submit Review
+                    </button>
+                    <p class="review-status field full"
+                       id="reviewStatus"
+                       role="status"
+                       aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="../JavaScript/review-form.js"></script>
+</body>
+</html>

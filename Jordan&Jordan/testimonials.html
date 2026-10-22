@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Customer testimonials for Jordan & Jordan Property Services.">
+  <title>Testimonials | Jordan &amp; Jordan Property Services</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="https://kit.fontawesome.com/e513f4361b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html#home">
+        <div class="logo">JJ</div>
+        <div>
+          <div class="brand-title">Jordan and Jordan</div>
+          <div class="brand-services">SERVICES</div>
+          <div class="brand-tag">PROFESSIONAL PROPERTY SERVICES</div>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false">☰</button>
+
+      <nav id="mainNav" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#about">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="testimonials.html" aria-current="page">Testimonials</a>
+          <div class="social-links">
+                <a href="https://www.facebook.com/jjpropertyservicesga"
+                   aria-label="Facebook">
+                    <i class="fa-brands fa-square-facebook fa-2x"></i>
+                </a>
+            </div>
+      </nav>
+
+      <a class="btn btn-primary" href="index.html#contact">
+        Request an Estimate
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="testimonials-hero">
+      <div class="container">
+        <div class="eyebrow">Our customers</div>
+        <h1>Testimonials</h1>
+        <p>
+          We believe dependable service and careful work speak for themselves.
+          We look forward to sharing our customers’ experiences here.
+        </p>
+        <a class="btn btn-primary testimonials-facebook-link"
+           href="https://www.facebook.com/jjpropertyservicesga/reviews/?id=61590733208307&amp;sk=reviews"
+           target="_blank" rel="noopener noreferrer">
+          See more from Facebook
+        </a>
+      </div>
+    </section>
+
+    <section class="testimonials-list" aria-label="Customer testimonials">
+      <article class="testimonial-card">
+        <div class="testimonial-mark" aria-hidden="true">“</div>
+        <h2>Water Heater Replacement</h2>
+        <p>
+          Called for an emergency water heater replacement. These guys were at the house quickly and got the job done after hours for a very reasonable rate. Super friendly and hassle free. Glad to have hot water again!
+        </p>
+        <p class="testimonial-attribution">— Facebook review</p>
+      </article>
+      <article class="testimonial-card">
+        <div class="testimonial-mark" aria-hidden="true">“</div>
+        <h2>Customer Testimonial</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante, dapibus posuere velit aliquet.
+        </p>
+      </article>
+      <article class="testimonial-card">
+        <div class="testimonial-mark" aria-hidden="true">“</div>
+        <h2>Customer Testimonial</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia bibendum nulla sed consectetur.
+        </p>
+      </article>
+    </section>
+    <div class="testimonials-contact">
+      <a class="btn btn-primary" href="contact.html">Contact Us</a>
+    </div>
+
+    <section class="review-submission" aria-labelledby="reviewFormTitle">
+      <div class="review-form-card">
+        <div class="eyebrow">Share your experience</div>
+        <h2 id="reviewFormTitle">Submit a Customer Review</h2>
+        <p class="review-form-intro">
+          Reviews are held for approval before they appear on this page.
+        </p>
+        <form id="reviewForm">
+          <div class="field">
+            <label for="reviewName">Name *</label>
+            <input id="reviewName" name="name" maxlength="100"
+              autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="reviewService">Service *</label>
+            <select id="reviewService" name="service" required>
+              <option value="">Choose a service</option>
+              <option>Repairs &amp; Maintenance</option>
+              <option>Painting &amp; Finishing</option>
+              <option>Junk Removal</option>
+              <option>Pressure Washing</option>
+              <option>Other / Multiple Services</option>
+            </select>
+          </div>
+          <fieldset class="field star-rating">
+            <legend>Star rating *</legend>
+            <div class="star-rating-options" role="radiogroup"
+              aria-label="Star rating">
+              <input id="rating1" name="rating" type="radio" value="1"
+                aria-label="1 star" required>
+              <label for="rating1" title="1 star"><span aria-hidden="true">★</span></label>
+              <input id="rating2" name="rating" type="radio" value="2"
+                aria-label="2 stars">
+              <label for="rating2" title="2 stars"><span aria-hidden="true">★</span></label>
+              <input id="rating3" name="rating" type="radio" value="3"
+                aria-label="3 stars">
+              <label for="rating3" title="3 stars"><span aria-hidden="true">★</span></label>
+              <input id="rating4" name="rating" type="radio" value="4"
+                aria-label="4 stars">
+              <label for="rating4" title="4 stars"><span aria-hidden="true">★</span></label>
+              <input id="rating5" name="rating" type="radio" value="5"
+                aria-label="5 stars">
+              <label for="rating5" title="5 stars"><span aria-hidden="true">★</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="reviewSummary">Review summary *</label>
+            <textarea id="reviewSummary" name="summary" maxlength="3000"
+              placeholder="Tell us about your experience." required></textarea>
+          </div>
+          <button class="btn btn-primary review-submit" type="submit">
+            Submit Review
+          </button>
+          <div id="reviewFormMessage" class="review-form-message"
+            role="status" aria-live="polite" aria-atomic="true"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Jordan &amp; Jordan Property Services.</span>
+      <address class="footer-contact">
+        <span>Address: Your business address</span>
+        <a href="tel:+15555550100">Phone: (555) 555-0100</a>
+        <a href="mailto:hello@example.com">Email: hello@example.com</a>
+      </address>
+      <span>Repair. Maintain. Finish. Improve.</span>
+      <a href="index.html#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const toggle = document.getElementById("menuToggle");
+    const nav = document.getElementById("mainNav");
+    toggle.addEventListener("click", () => {
+      const isOpen = nav.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", isOpen);
+      toggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    nav.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        nav.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
+        toggle.textContent = "☰";
+      });
+    });
+
+    const reviewForm = document.getElementById("reviewForm");
+    const reviewFormMessage = document.getElementById("reviewFormMessage");
+
+    reviewForm.addEventListener("submit", async event => {
+      event.preventDefault();
+
+      const submitButton = reviewForm.querySelector(
+        'button[type="submit"]'
+      );
+      const formData = new FormData(reviewForm);
+      const review = {
+        name: formData.get("name"),
+        service: formData.get("service"),
+        rating: formData.get("rating"),
+        summary: formData.get("summary")
+      };
+
+      submitButton.disabled = true;
+      reviewFormMessage.classList.remove("is-error");
+      reviewFormMessage.textContent = "Submitting your review...";
+
+      try {
+        const response = await fetch("/api/reviews", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(review)
+        });
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(result.error || "Unable to submit your review.");
+        }
+
+        reviewForm.reset();
+        reviewFormMessage.textContent =
+          "Thank you! Your review has been submitted for approval.";
+      } catch (error) {
+        reviewFormMessage.classList.add("is-error");
+        reviewFormMessage.textContent =
+          error.message || "Something went wrong. Please try again.";
+      } finally {
+        submitButton.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
