@@ -59,11 +59,11 @@
         </div>
         <form class="application-form" id="application-form">
           <div class="form-heading"><span class="form-icon" aria-hidden="true">✦</span><div><h3>Family application</h3><p>All fields are required unless marked optional.</p></div></div>
-          <label for="applicant-name">Name (Last, First)</label>
+          <label for="applicant-name" class="required">Name (Last, First)</label>
           <input id="applicant-name" name="name" autocomplete="name" maxlength="120" required>
-          <label for="applicant-email">Email address</label>
+          <label for="applicant-email" class="required">Email address</label>
           <input id="applicant-email" name="email" type="email" autocomplete="email" maxlength="254" required>
-          <label for="applicant-battery">Battery</label>
+          <label for="applicant-battery" class="required">Battery</label>
           <select id="applicant-battery" name="battery" required>
             <option value="">Choose a battery</option>
             <option>HHB</option>
@@ -80,12 +80,12 @@
           <div id="children-list" class="children-list">
             <fieldset class="child-entry" data-child-entry>
               <legend class="child-entry-title">Child 1</legend>
-              <label for="child-1-age-band">Age Group</label>
+              <label for="child-1-age-band" class="required">Age Group</label>
               <select id="child-1-age-band" data-child-field="ageBand" required>
                 <option value="">Choose an age group</option>
                 <option>0–2</option><option>3–4</option><option>5–6</option><option>7–8</option><option>9–12</option><option>13+</option>
               </select>
-              <label for="child-1-gender">Gender</label>
+              <label for="child-1-gender" class="required">Gender</label>
               <select id="child-1-gender" data-child-field="gender" aria-describedby="child-1-gender-help" required>
                 <option value="">Choose a gender</option>
                 <option value="Male">Male</option>
@@ -93,17 +93,17 @@
               </select>
               <p class="field-help" id="child-1-gender-help">Choose male or female.</p>
               <div class="size-fields" aria-label="Optional clothing sizes">
-                <label for="child-1-shirt-size">Shirt size
+                <label for="child-1-shirt-size" class="required-label"><span class="required-text">Shirt size</span>
                   <input id="child-1-shirt-size" data-child-field="shirtSize" maxlength="40" required>
                 </label>
-                <label for="child-1-pants-size">Pants size
+                <label for="child-1-pants-size" class="required-label"><span class="required-text">Pants size</span>
                   <input id="child-1-pants-size" data-child-field="pantsSize" maxlength="40" required>
                 </label>
-                <label for="child-1-shoe-size">Shoe size
+                <label for="child-1-shoe-size" class="required-label"><span class="required-text">Shoe size</span>
                   <input id="child-1-shoe-size" data-child-field="shoeSize" maxlength="40" required>
                 </label>
               </div>
-              <label for="child-1-interests">Interests and Hobbies</label>
+              <label for="child-1-interests" class="required">Interests and Hobbies</label>
               <textarea id="child-1-interests" data-child-field="interests" rows="3" maxlength="1200" aria-describedby="child-1-interests-help" required></textarea>
               <p class="field-help" id="child-1-interests-help">Please avoid sensitive personal or medical details.</p>
               <div class="wish-list-fields">
@@ -114,7 +114,7 @@
                 <label class="wish-list-row"><span aria-hidden="true">4</span><input data-child-field="wishListItem4" maxlength="200" aria-label="Wish list item 4"></label>
                 <p class="wish-list-title"><span>(Wish List entries are optional)</span></p>
               </div>
-              <label for="child-1-sensory-allergy-concerns">Sensory and Allergy Concerns</label>
+              <label for="child-1-sensory-allergy-concerns" class="required">Sensory and Allergy Concerns</label>
               <textarea id="child-1-sensory-allergy-concerns" data-child-field="sensoryAllergyConcerns" rows="3" maxlength="1200" required></textarea>
               <button class="button button-quiet remove-child-button" type="button" hidden>Remove child</button>
             </fieldset>
@@ -123,13 +123,13 @@
           <template id="child-template">
             <fieldset class="child-entry" data-child-entry>
               <legend class="child-entry-title"></legend>
-              <label>Age group
+              <label class="required">Age group
                 <select data-child-field="ageBand" required>
                   <option value="">Choose an age group</option>
                   <option>0–2</option><option>3–4</option><option>5–6</option><option>7–8</option><option>9–12</option><option>13+</option>
                 </select>
               </label>
-              <label>Gender
+              <label class="required">Gender
                 <select data-child-field="gender" required>
                   <option value="">Choose a gender</option>
                   <option value="Male">Male</option>
@@ -138,17 +138,17 @@
               </label>
               <p class="field-help">Choose male or female.</p>
               <div class="size-fields" aria-label="Optional clothing sizes">
-                <label>Shirt size
+                <label class="required-label"><span class="required-text">Shirt size</span>
                   <input data-child-field="shirtSize" maxlength="40" required>
                 </label>
-                <label>Pants size
+                <label class="required-label"><span class="required-text">Pants size</span>
                   <input data-child-field="pantsSize" maxlength="40" required>
                 </label>
-                <label>Shoe size
+                <label class="required-label"><span class="required-text">Shoe size</span>
                   <input data-child-field="shoeSize" maxlength="40" required>
                 </label>
               </div>
-              <label>Interests
+              <label class="required">Interests
                 <textarea data-child-field="interests" rows="3" maxlength="1200" required></textarea>
               </label>
               <p class="field-help">Please avoid sensitive personal or medical details.</p>
@@ -159,13 +159,13 @@
                 <label class="wish-list-row"><span aria-hidden="true">3</span><input data-child-field="wishListItem3" maxlength="200" aria-label="Wish list item 3"></label>
                 <label class="wish-list-row"><span aria-hidden="true">4</span><input data-child-field="wishListItem4" maxlength="200" aria-label="Wish list item 4"></label>
               </div>
-              <label>Sensory and Allergy Concerns
+              <label class="required">Sensory and Allergy Concerns
                 <textarea data-child-field="sensoryAllergyConcerns" rows="3" maxlength="1200" required></textarea>
               </label>
               <button class="button button-quiet remove-child-button" type="button">Remove child</button>
             </fieldset>
           </template>
-          <label class="consent-row"><input type="checkbox" name="consent" required><span>I understand that my name and email address, battery selection, and each child’s age group, gender, shirt, pants, and shoe sizes, interests and hobbies, wish list items, and sensory and allergy concerns (which may include sensitive health information) will be used to review this application and contact my family, and copied to a restricted program Google Sheet accessible to authorized staff.</span></label>
+          <label class="consent-row"><input type="checkbox" name="consent" required><span class="required-field">I understand that my name and email address, battery selection, and each child’s age group, gender, shirt, pants, and shoe sizes, interests and hobbies, wish list items, and sensory and allergy concerns (which may include sensitive health information) will be used to review this application and contact my family, and copied to a restricted program Google Sheet accessible to authorized staff.</span></label>
           <button class="button button-primary" type="submit">Submit application <span aria-hidden="true">→</span></button>
           <p class="form-message" id="application-message" role="status" aria-live="polite"></p>
           <p class="fine-print">Please do not submit an application more than once. We will not include your family’s details in email notifications.</p>
@@ -179,8 +179,8 @@
         <div id="login-panel" class="login-panel">
           <h2>Staff sign in</h2>
           <form id="login-form">
-            <label for="login-email">Staff email</label><input id="login-email" type="email" autocomplete="username" required>
-            <label for="login-password">Password</label><input id="login-password" type="password" autocomplete="current-password" required>
+            <label for="login-email" class="required">Staff email</label><input id="login-email" type="email" autocomplete="username" required>
+            <label for="login-password" class="required">Password</label><input id="login-password" type="password" autocomplete="current-password" required>
             <button class="button button-primary" type="submit">Sign in</button>
             <p class="form-message" id="login-message" role="status" aria-live="polite"></p>
           </form>

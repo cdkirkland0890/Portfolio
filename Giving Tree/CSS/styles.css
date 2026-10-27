@@ -396,6 +396,10 @@ h2 {
   color: #fff;
   background: var(--forest);
 }
+.required::after, .required-field::after, .required-text::after {
+  content: " *";
+  color: #d72626;
+}
 label:not(.consent-row) {
   display: block;
   margin: 17px 0 7px;
