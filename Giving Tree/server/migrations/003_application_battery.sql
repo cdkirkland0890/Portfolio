@@ -1,0 +1,1 @@
+ALTER TABLE applications ADD COLUMN battery TEXT NOT NULL DEFAULT '';
